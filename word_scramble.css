@@ -1,0 +1,117 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    /*background: linear-gradient(135deg, #f1b96f, #ddaedf, #fdd29a, #d4df79);*/
+    background: url("wallpaper1.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.game-heading {
+    font-size: 3rem;
+    color: #234d63;
+    text-align: center;
+    font-family: Pristina;
+}
+
+/* Center Box Styling */
+.center-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.hard-level {
+    width: 2000px; /* Increased width for hard level */
+}
+/* Rules List */
+.rules-list {
+    text-align:center;
+    list-style-type: none;
+    line-height: 2;
+    padding: 0;
+}
+h2{
+    font-family:Script MT Bold;
+    font-weight:40px;
+}
+
+/* Button Styling */
+button, select{
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4682b4;
+    transition: background-color 0.3s ease;
+    font-size: medium;
+}
+.stars {
+    visibility:hidden;
+}
+.fa{
+    color: #ff4500; 
+}
+button:hover{
+    background-color: #ff4500;
+}
+.letter-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Draggable Letter Styling */
+.draggable-letter {
+    width: 50px;
+    height: 50px;
+    background-color: #7997b1;
+    color: #333;
+    font-size: 2rem;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#quitButton{
+    display:inline-block;
+}
+
+.dash-box {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e3e4;
+    margin: 5px;
+    border: 2px dotted #817c7c;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Styling for Correctly Placed Letters */
+.correct-letter {
+    background-color: #4caf50;
+    color: white;
+    font-size: 2.5rem;
+    visibility: visible;
+}
+
+/* Additional Styling for Result Section */
+#afterCorrect {
+    margin-top: 20px;
+}
+
+#resultMessage {
+    margin-bottom: 20px;
+}

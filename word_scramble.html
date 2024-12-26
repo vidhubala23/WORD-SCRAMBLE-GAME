@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="word_scramble.css">
+   <!-- Font Awesome 5 Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Heading Outside the Game Box -->
+    <h1 class="game-heading">Word Scramble Game</h1>
+
+    <!-- Home Page Content -->
+    <div id="home" class="center-box">
+        <div class="rules-container">
+            <div class="rules-text">
+                <h2>Rules</h2>
+                <ul class="rules-list">
+                    <li>Unscramble the letters to form the correct word.</li>
+                    <li>Drag the letters to the dashes to complete the word.</li>
+                    <li>You have a limited number of moves to guess the word</li>
+                    <li>Unscrambling a word rewards you with coins.</li>
+                    <li> In Hard mode, use the clue button to reveal 2 letters.</li>
+                    <li>Additional clues can be purchased for 200 coins each.</li>
+                  
+                    <li>All the best...</li>
+                </ul>
+            </div>
+        </div>
+        <button id="startButton">START</button>
+    </div>
+
+    <!-- Play Page Content (Hidden by Default) -->
+    <div id="play" class="center-box" style="display:none;">
+     
+        <h2 id="playHeading" >Unscramble The Word</h2>
+        <div  id="stars">
+        <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </div>
+        <div id="scrambledWordContainer" class="letter-container"></div>
+        <div id="dashesContainer" class="letter-container"></div>
+        <!-- Game Controls: New Word Button and Level Selection -->
+        <div id="gameControls">
+            <button id="newWordButton">New Word</button>
+            <button id="clueButton" >Clue</button>
+            <button id="quitButton">Quit</button>
+            <select id="changeLevelDropdown">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <!-- Result Section: Shown on Success or Game Over -->
+        <div id="afterCorrect">
+            <p id="resultMessage" style="font-size: 1.2rem;"></p> <!-- Congratulatory or Game Over Message -->
+            <button id="nextButton">Next-Round</button>
+            <button id="quit">Quit</button>
+        </div>
+
+        <!-- Coins and Moves Display -->
+        <p id="coins">Coins: 100</p>
+        <p id="moves">Moves Left: 15</p>
+    </div>
+
+    <script src="word_scramble.js"></script>
+</body>
+</html>
